@@ -6,6 +6,7 @@ import Checkbox from "@/components/atoms/Checkbox"
 import Badge from "@/components/atoms/Badge"
 import PriorityIndicator from "@/components/molecules/PriorityIndicator"
 import Button from "@/components/atoms/Button"
+import SubtaskList from "@/components/molecules/SubtaskList"
 
 const TaskCard = ({ 
   task,
@@ -13,7 +14,8 @@ const TaskCard = ({
   onEdit,
   onDelete,
   onArchive,
-  onRestore,
+onRestore,
+  onSubtaskToggle,
   showArchiveActions = false,
   className,
   ...props 
@@ -155,6 +157,12 @@ const TaskCard = ({
           </div>
         </div>
       </div>
+{/* Subtasks Section */}
+      <SubtaskList 
+        subtasks={task.subtasks}
+        parentCompleted={task.completed}
+        onSubtaskToggle={onSubtaskToggle}
+      />
     </div>
   )
 }

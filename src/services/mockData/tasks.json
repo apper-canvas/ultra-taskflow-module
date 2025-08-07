@@ -7,8 +7,28 @@
     "priority": "High",
     "dueDate": "2024-01-15T17:00:00.000Z",
     "completed": false,
+"completed": false,
     "archived": false,
-    "createdAt": "2024-01-10T09:00:00.000Z"
+    "subtasks": [
+      {
+        "Id": 1,
+        "title": "Gather Q3 sales data",
+        "description": "Collect sales figures from all departments",
+        "completed": true
+      },
+      {
+        "Id": 2,
+        "title": "Analyze performance trends",
+        "description": "Compare with Q2 and identify key patterns",
+        "completed": false
+      },
+      {
+        "Id": 3,
+        "title": "Create stakeholder presentation",
+        "description": "Prepare summary slides for meeting",
+        "completed": false
+      }
+    ]
   },
   {
     "Id": 2,
@@ -29,8 +49,34 @@
     "priority": "Medium",
     "dueDate": "2024-01-14T12:00:00.000Z",
     "completed": false,
+"completed": false,
     "archived": false,
-    "createdAt": "2024-01-11T08:15:00.000Z"
+    "subtasks": [
+      {
+        "Id": 4,
+        "title": "Make shopping list",
+        "description": "List all ingredients needed",
+        "completed": true
+      },
+      {
+        "Id": 5,
+        "title": "Buy pasta and sauce",
+        "description": "Get fresh pasta and marinara sauce",
+        "completed": false
+      },
+      {
+        "Id": 6,
+        "title": "Select wine pairing",
+        "description": "Choose appropriate wine for dinner",
+        "completed": false
+      },
+      {
+        "Id": 7,
+        "title": "Pick dessert items",
+        "description": "Get tiramisu ingredients or buy ready-made",
+        "completed": false
+      }
+    ]
   },
   {
     "Id": 4,
@@ -73,8 +119,28 @@
     "priority": "Medium",
     "dueDate": "2024-01-19T16:00:00.000Z",
     "completed": true,
+"completed": true,
     "archived": false,
-    "createdAt": "2024-01-08T13:30:00.000Z"
+    "subtasks": [
+      {
+        "Id": 8,
+        "title": "Clear desk surface",
+        "description": "Remove clutter and organize papers",
+        "completed": true
+      },
+      {
+        "Id": 9,
+        "title": "Organize filing system",
+        "description": "Sort documents into proper folders",
+        "completed": true
+      },
+      {
+        "Id": 10,
+        "title": "Install better lighting",
+        "description": "Set up desk lamp and overhead light",
+        "completed": true
+      }
+    ]
   },
   {
     "Id": 8,

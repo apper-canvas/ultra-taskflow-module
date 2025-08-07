@@ -72,7 +72,12 @@ const TaskList = ({
       console.error("Toggle complete error:", err)
     }
   }
-
+// Handle subtask toggle
+  const handleSubtaskToggle = async (taskId, subtaskId) => {
+    // This would be implemented when task data structure includes subtasks
+    // For now, just show a toast indicating the feature needs data structure updates
+    toast.info("Subtask functionality requires enhanced task data structure")
+  }
   const handleEdit = (task) => {
     setSelectedTask(task)
     setIsModalOpen(true)
@@ -234,11 +239,12 @@ const TaskList = ({
         <div key={task.Id} className="group">
           <TaskCard
             task={task}
-            onToggleComplete={handleToggleComplete}
+onToggleComplete={handleToggleComplete}
             onEdit={handleEdit}
             onDelete={handleDelete}
             onArchive={handleArchive}
             onRestore={handleRestore}
+            onSubtaskToggle={(subtaskId) => handleSubtaskToggle(task.Id, subtaskId)}
             showArchiveActions={filter === "archive"}
           />
         </div>
